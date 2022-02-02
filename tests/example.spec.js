@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const strOfLength = require('../strLength');
 
-describe('Length os string', function () {
+describe('Length of string', function () {
 
     it('should return length of string', function () {
         expect(strOfLength('18')).eq(2)
