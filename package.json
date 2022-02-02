@@ -19,8 +19,6 @@
     "mocha": "^9.2.0"
   },
   "dependencies": {
-    "dotenv": "^14.3.2",
-    "mocha": "^9.2.0",
     "supertest": "^6.2.2"
   }
 }
