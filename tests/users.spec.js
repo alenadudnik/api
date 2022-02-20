@@ -11,7 +11,7 @@ describe('USERS', function () {
     userId = userHelper.response.body.id;
   });
 
-  describe('user creation', function () {
+  describe('USER CREATION', function () {
     it('response status code is 200', function () {
       expect(userHelper.response.statusCode).to.eq(200);
     });
@@ -25,7 +25,7 @@ describe('USERS', function () {
     });
   });
 
-  describe('get user by ID', function () {
+  describe('GET USER BY ID', function () {
     before(async function () {
       await userHelper.getByID(userId);
     });
@@ -43,7 +43,7 @@ describe('USERS', function () {
     });
   });
 
-  describe('get all users', function () {
+  describe('GET ALL USERS', function () {
     before(async function () {
       await userHelper.create();
       await userHelper.getAll();
@@ -66,7 +66,7 @@ describe('USERS', function () {
     });
   });
 
-  describe('user delete', function () {
+  describe('USER DELETE', function () {
     before(async function () {
       await userHelper.delete(userId);
     });
