@@ -1,4 +1,4 @@
-name: Node.js CI
+name: API tests
 
 on:
   push:
@@ -25,8 +25,8 @@ jobs:
       run: npm i
     - name: Run API tests
       env: 
-        BASE_URL: ${{ secret.BASE_URL }}
-        LOGIN: ${{ secret.LOGIN }}
-        PASSWORD: ${{ secret.PASSWORD }}
-        PORT: ${{ secret.PORT }}
+        BASE_URL: ${{ secrets.BASE_URL }}
+        LOGIN: ${{ secrets.LOGIN }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        PORT: ${{ secrets.PORT }}
       run: npm test
